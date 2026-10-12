@@ -183,15 +183,14 @@ img{max-width:100%;display:block}
 .marquee{position:relative;border-top:1px solid var(--mist);border-bottom:1px solid var(--mist);overflow:hidden;padding-block:18px;direction:ltr;cursor:grab;user-select:none;-webkit-user-select:none;touch-action:pan-y;-webkit-mask:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
 .marquee.dragging{cursor:grabbing}
 .track{display:flex;align-items:center;width:max-content;will-change:transform}
-.track span{display:inline-flex;align-items:center;white-space:nowrap;font-size:14px;font-weight:400;color:var(--forest);letter-spacing:.06em;padding:6px 18px;border-radius:999px;transition:transform .45s var(--pop),color .3s var(--ease),background .3s var(--ease);transform-origin:center}
-.track span::after{content:"";width:4px;height:4px;border-radius:50%;background:var(--sage);margin-inline-start:36px;flex:none;transition:opacity .3s}
-.track span:hover{transform:scale(1.22);color:var(--fg);background:var(--mist)}
-.track span:hover::after{opacity:0}
-.marquee.dragging .track span{transition:none}
-@media (hover:none){.track span:hover{transform:none;background:transparent;color:var(--forest)}.track span:hover::after{opacity:1}}
-@media (max-width:600px){.track span{font-size:13px;padding:5px 14px}.track span::after{margin-inline-start:26px}.marquee{padding-block:14px}}
+.track span{display:inline-block;white-space:nowrap;font-size:14px;font-weight:400;color:var(--forest);letter-spacing:.06em;line-height:1.4;padding:6px 14px;border-radius:999px;transition:transform .35s var(--ease),color .3s var(--ease),background .3s var(--ease);transform-origin:center}
+.track i{display:block;width:4px;height:4px;border-radius:50%;background:var(--sage);margin-inline:14px;flex:none;opacity:.9}
+.track span:hover{transform:scale(1.06);color:var(--fg);background:var(--mist)}
+.marquee.dragging .track span{transition:none;transform:none;background:transparent;color:var(--forest)}
+@media (hover:none){.track span:hover{transform:none;background:transparent;color:var(--forest)}}
+@media (max-width:600px){.track span{font-size:13px;padding:5px 12px}.track i{margin-inline:10px}.marquee{padding-block:14px}}
 @media (prefers-reduced-motion:reduce){
-  .marquee{overflow-x:auto;scrollbar-width:none;cursor:default;-webkit-mask:none;mask:none}
+  .marquee{overflow-x:auto;scrollbar-width:none;cursor:default;-webkit-mask:none;mask:none;touch-action:auto;user-select:text;-webkit-user-select:text}
   .marquee::-webkit-scrollbar{display:none}
   .track span:hover{transform:none}
 }
@@ -376,7 +375,7 @@ footer .wrap{display:flex;align-items:center;justify-content:space-between;gap:1
   </section>
 
   <div class="marquee" aria-hidden="true">
-    <div class="track" id="track"><span>Marketing strategy</span><span>Content creation</span><span>Branding</span><span>Storytelling</span><span>Copywriting</span><span>Social media</span><span>Writing</span><span>Marketing strategy</span><span>Content creation</span><span>Branding</span><span>Storytelling</span><span>Copywriting</span><span>Social media</span><span>Writing</span><span>Marketing strategy</span><span>Content creation</span><span>Branding</span><span>Storytelling</span><span>Copywriting</span><span>Social media</span><span>Writing</span></div>
+    <div class="track" id="track"><span>Marketing strategy</span><i aria-hidden="true"></i><span>Content creation</span><i aria-hidden="true"></i><span>Branding</span><i aria-hidden="true"></i><span>Storytelling</span><i aria-hidden="true"></i><span>Copywriting</span><i aria-hidden="true"></i><span>Social media</span><i aria-hidden="true"></i><span>Writing</span><i aria-hidden="true"></i><span>Marketing strategy</span><i aria-hidden="true"></i><span>Content creation</span><i aria-hidden="true"></i><span>Branding</span><i aria-hidden="true"></i><span>Storytelling</span><i aria-hidden="true"></i><span>Copywriting</span><i aria-hidden="true"></i><span>Social media</span><i aria-hidden="true"></i><span>Writing</span><i aria-hidden="true"></i><span>Marketing strategy</span><i aria-hidden="true"></i><span>Content creation</span><i aria-hidden="true"></i><span>Branding</span><i aria-hidden="true"></i><span>Storytelling</span><i aria-hidden="true"></i><span>Copywriting</span><i aria-hidden="true"></i><span>Social media</span><i aria-hidden="true"></i><span>Writing</span><i aria-hidden="true"></i></div>
   </div>
 
   <section class="book" id="book">
