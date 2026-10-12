@@ -1,0 +1,14 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Tadmor;Yanir;;;
+FN:Yanir Tadmor
+X-PHONETIC-FIRST-NAME:יניר
+X-PHONETIC-LAST-NAME:תדמור
+TITLE:Author · Marketer · Content Creator
+EMAIL;TYPE=INTERNET,PREF:yanirtad@gmail.com
+TEL;TYPE=CELL:+972509222640
+URL:https://yanirtadmor.com/
+X-SOCIALPROFILE;TYPE=linkedin:https://www.linkedin.com/in/yanir-tadmor-11ab29154/
+X-SOCIALPROFILE;TYPE=instagram:https://www.instagram.com/yanirtad
+X-SOCIALPROFILE;TYPE=facebook:https://www.facebook.com/yanir.tadmor
+END:VCARD
